@@ -1,0 +1,205 @@
+body {
+  display: flex;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  font-family: "Times New Roman", Times, serif;
+}
+
+h1 {
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  margin: 1px;
+}
+
+h2 {
+  color: #4adf86;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  margin: 1px;
+}
+
+h4 {
+  color: #d5d4d8;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  margin: 10px 1px 1px 1px;
+}
+.mainContainer {
+  background-color: #1f2937;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 20px;
+  border: 2px solid wheat;
+  box-shadow: rgba(216, 216, 216, 0.993);
+}
+
+.contentContainer {
+  display: flex;
+  margin-top: 100px;
+  margin-left: 52px;
+  margin-right: 52px;
+  flex-direction: column;
+}
+
+.passwordGenerationSection {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin-top: 51px;
+  align-items: normal;
+  justify-content: space-between;
+}
+
+.checkBoxLabel {
+  position: absolute;
+  font-weight: bold;
+  margin: auto;
+  width: fit-content;
+  top: -8px;
+  left: 0;
+  right: 0;
+  background-color: #1f2937;
+  padding: 0px 20px;
+}
+
+.checkBoxContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  border: 2px solid #2f3e53;
+  border-radius: 15px;
+  padding: 20px 10px 10px 10px;
+}
+
+.generatePaswordSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+button {
+  background: #10b981;
+  color: white;
+  width: 191px;
+  height: 42px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  padding: 9px 16px;
+  border: transparent;
+}
+
+label {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.passwordLength-input {
+  height: 42px;
+  width: 60px;
+  background-color: #273549;
+  border-radius: 6px;
+  border: transparent;
+  color: #55f991;
+  text-align: center;
+  margin: 1px;
+}
+
+.message-box {
+  display: flex;
+  flex-wrap: wrap;
+  color: red;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+hr {
+  margin-top: 35px;
+  margin-bottom: 35px;
+  width: 100%;
+  border: 1px solid #2f3e53;
+}
+.newPasswordSection {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+.passwordInput {
+  width: 211px;
+  height: 39px;
+  background: #273549;
+  color: #55f991;
+  border-radius: 6px;
+  border: transparent;
+  text-align: center;
+  margin: 5px 0px 5px 0px;
+}
+
+#firstPassword {
+  margin-right: 5px;
+}
+
+#secondPassword {
+  margin-left: 5px;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 0;
+  }
+
+  .mainContainer {
+    width: 100%;
+  }
+
+  .contentContainer {
+    margin: 50px;
+    max-width: 600px;
+  }
+
+  .tile-box h1,
+  .tile-box h2 {
+    font-size: 30px;
+  }
+
+  .tile-box h4 {
+    font-size: 18px;
+  }
+
+  .checkBoxLabel {
+    font-size: 14px;
+    top: -30px;
+    padding: 0 10px;
+    margin-top: 20px;
+  }
+
+  .checkBoxContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .newPasswordSection {
+    justify-content: center;
+  }
+  .passwordInput {
+    margin: 10px 0px 0px 10px;
+  }
+  .passwordLength-input {
+    width: 40px;
+  }
+}
